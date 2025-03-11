@@ -1,0 +1,15 @@
+body {
+    background-color: lightgreen;
+}
+form {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#age { width: 40px;}

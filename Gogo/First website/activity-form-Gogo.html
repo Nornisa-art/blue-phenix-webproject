@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style sheet/form.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+    <style>
+        label, input{
+            display: inline-block;
+        }
+        input[type="first name"], input[type="middle name"] input[type="lastname"]{
+            display: block;
+            color: yellowgreen;
+        }
+        
+         input[type="date"] {
+            display:inline;
+            color: cornflowerblue;
+        }
+        input[type="text"] {
+            display: block;
+            color: darkslateblue;
+        }
+        input[type="first name"], input[type="middle name"], input[type="lastname"], input[type="date"] input[type="text"]{
+                height: 20px;
+                width: 300px;
+                font-size: 16px;
+                padding: 5px;
+                border-radius: 10px;
+                font-style: oblique;
+                color:yellow
+                
+          }
+    </style>
+    
+</head>
+<body>
+ <form action="">
+    <label><b>First Name</b></label> <br>
+    <input type="first name"><br>
+    <label><b>Middle Name</b></label><br>
+    <input type="middle name"><br>
+    <label><b>Lastname</b></label><br>
+    <input type="lastname"><br>
+    <label><b>Gender</b></label><br>
+    <input type="radio" name="gender"> Male <br>
+    <input type="radio" name="gender"> Female <br>
+</form>
+   
+    <form>
+    <label><b>Birth date</b></label> <br>
+    <input type="date"> <br>
+   </form>
+
+   <form action="">
+    <label><b>Birth Location</b></label>
+    <input type="text">
+ </form>
+ <form>
+    <label><b>Age</b></label>
+    <input type="text">
+ </form>
+ <form>
+    <label><b>Address</b></label> 
+    <input type="text">
+ </form>
+
+ <form>
+    <label><b>Skills</b></label> <br>
+    <input type="radio" name="skill"> Java Programming <br>
+    <input type="radio" name="skill"> C# Programming <br>
+    <input type="radio" name="skill"> Web designing <br>
+    <input type="radio" name="skill"> Branding designer <br>
+    <input type="radio" name="skill"> Layouting <br>
+
+</form>
+<form action="">
+    <input type="submit" value="Save">
+</form>
+</body>
+</html>

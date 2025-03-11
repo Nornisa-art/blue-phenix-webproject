@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style sheet/external.css">
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+         .CssGroup {
+            color: brown;
+        }
+        #FirstParagraph {
+            text-transform: uppercase;
+        }
+    </style>
+    <style>
+          label, input {
+            display: block;
+          }
+          input[type="checkbox"], input[type="radio"] {
+            display: inline;
+    }
+          input[type="email"], input[type="password"] {
+                height: 30px;
+                width: 300px;
+                font-size: 16px;
+                padding: 5px;
+                border-radius: 10px;
+                font-style: oblique;
+                color:yellow
+                
+          }
+    </style>
+</head>
+<body style="background-color: bisque;">
+    <p id="FirstParagraph">This is the 1st paragraph</p>
+    <p class="CssGroup">This is the 2nd paragraph</p>
+    <p class="CssGroup">This is the 3rd paragraph</p>
+
+    <form>
+        <label for=""><b>Email<b></label> 
+        <input type="email"> 
+        <label for="">Shade</label> 
+        <input type="color">
+        <label for="">Click me</label>
+        <input type="button">
+        
+    </form>
+     <form action="">
+        <label for="">Password</label>
+        <input type="password">
+        <label for="">Checkbox</label>
+        <input type="checkbox"> One
+        <input type="checkbox"> Two
+        <input type="checkbox"> Three
+        <input type="checkbox"> Four
+
+        <label for="">Radio Button</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+
+        
+
+     </form>
+     <form action="">
+        <textarea rows="10" cols="50"></textarea>
+        
+        <input type="submit" value="Save">
+     </form>
+    
+</body>
+</html>
