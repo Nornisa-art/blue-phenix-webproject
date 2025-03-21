@@ -4,129 +4,281 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .header,.section,.footer {
-            display: flex;
-            border: 1px solid red;
-        } 
+    
 
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         .navigation {
             height: 50px;
             background-color: #043873;
-            font-size: 50px;
-            color: white;
+            padding: 20px 10px 5px 20px;
+            align-content: flex-end;
+            text-align: right;
+            padding-right: 50px;
         }
 
-       .header {
-             height: 829px;
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .navigation a:hover {
+            background-color: white;
+            color: #043873;
+            border-radius: 5px;
+        }
+
+        .header {
+             display: flex;
+             flex-direction: column 50% 50%;
+             height: 1588px;
              background-color: #043873;
+             font-size: 24px;
+             color: whitesmoke;
+             text-align: justify;
+             padding-right: 20px;
+             padding-left: 20px;
+        }
+        
+        .header> .items {
+            flex: 1;
+            color: white;
+            font-size: 24px;
+            padding: 20px;
+       }
+
+       .header img {
+        padding-top: 50px ;
+       }
+
+       .header input {
+        font-size: 24px;
+        background-color: #4F9CF9; 
+        color: whitesmoke;              
+        padding: 10px 20px;       
+        border: none;             
+        border-radius: 15px;       
+        cursor: pointer;           
+       }
+
+       input:hover {
+        background-color: white;
+        color: black;
        }
 
        .section {
-             height: 829px;
-             background-color: #c4defd;
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             gap: 20px;
+             align-items: center;
+             height: 800px;
+             background-color: white;
+             top: 92px;
+             padding: 140px 220px;
+             font-size: 24px;
+             text-align: justify;
        }
 
-       .sectiondark {
-             height: 829px;
-             background-color: #c4defd;
+       .section input {
+        font-size: 24px;
+        background-color: #4F9CF9; 
+        color: white;              
+        padding: 10px 20px;                 
+        border-radius: 50px;       
+        cursor: pointer;  
        }
 
-       .blue {
-            height: 829px;
-            background-color: #ffe492;
+       .section input:hover {
+        background-color: whitesmoke;
+        color: black;
+        }
+        
+        .dark {
+             height: 800px;
+             background-color: white;
+             font-size: 24px;
+             text-align: justify;
        }
 
-       .white {
-        height: 829px;
-        background-color: #c4defd;
-
+        .dark input {
+        font-size: 24px;
+        background-color: #4F9CF9; 
+        color: whitesmoke;              
+        padding: 10px 20px;                 
+        border-radius: 50px;       
+        cursor: pointer;    
        }
 
-       .title {
-        height: 780px;
-        background-color: #043873;
-        font-size: 45px;
-        color: white;
-        padding: 20px;
-        flex-direction: column;
-       }
-
-       .fine {
-        height: 829px;
-        background-color: #c4defd;
-       }
-
-       .final {
-        height: 150px;
-        background-color: #043873;
+       .dark input:hover {
+        color: black;
+        background-color: whitesmoke;
+        
        }
 
        .footer {
-             height: 150px;
-             background-color: rgb(137, 206, 206);
+        text-align: center;
+        background-color: #043873;
+        color: whitesmoke;
+        font-size: 16px;
+        padding: 20px;
        }
 
-       .section>.items {
-        flex: 1;
-        border: 1px solid red;
+       .last h6 {
+            font-size: 36px;
+            padding-bottom: 50px;
+       }
+
+       .last p{
+        padding-bottom: 50px;
+       }
+
+
+       .final{
+             height: 800px;
+             background-color: white;
+             font-size: 24px;
+             text-align: justify;
+       }
+
+       .final h6 {
+            font-size: 36px;
+            padding-bottom: 50px;
+       }
+       .final input{
+            font-size: 24px;
+            background-color: #4F9CF9; 
+            color: whitesmoke;              
+            padding: 10px 20px;                 
+            border-radius: 50px;       
+            cursor: pointer; 
+       }
+       .final input:hover {
         color: black;
-        font-size: 45px;
-        padding: 20px;
+        background-color: whitesmoke;
+       }
+       .final p {
+        padding-bottom: 30px;
        }
 
-       .header> .items {
-        flex: 1;
-        border: 1px solid red;
-        color: white;
-        font-size: 45px;
-        padding: 20px;
-       }
-
-       input[ type= submit]{
-        background-color: rgb(85, 143, 250);
-        width: 100px;
-        height: 40px;
-        color: white;
+       .yellow {
+        display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             gap: 20px;
+             align-items: center;
+             height: 800px;
+             background-color: white;
+             top: 92px;
+             padding: 140px 220px;
+             font-size: 24px;
+             text-align: justify;
        }
        
+       .yellow h6 {
+            font-size: 36px;
+            padding-bottom: 50px;
+       }
 
+       .yellow p {
+        padding-bottom: 30px;
+       }
+
+       .yellow input {
+        font-size: 24px;
+        background-color: #4F9CF9; 
+        color: whitesmoke;              
+        padding: 10px 20px;                 
+        border-radius: 50px;       
+        cursor: pointer; 
+       }
+       .title {
+        height: 600px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #043873;
+        color: whitesmoke;
+       }
+
+       .title h5 {
+        font-size: 36px;
+       }
+
+       .blue {
+        background-color: #043873;
+        color: whitesmoke;
         
-    </style>
+       }
 
+       .blue p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+       }
+
+       .blue input {
+        border: none;
+       }
+
+       .blue h4 {
+        font-size: 36px;
+       }
+       
+       .yellow {
+        background-color: #043873;
+        margin-bottom: 50px;
+        color: whitesmoke;
+       }
+
+       .yellow input:hover{
+        color: black;
+        background-color: whitesmoke;
+       }
+
+
+    </style>
 </head>
 <body>
     <div class="navigation">
-        Contact Us
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+
     </div>
 
    <div class="header">
     <div class="items">
     <h1>Inquire</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae nihil nulla nemo dolorum, porro veritatis excepturi at eveniet ab sit odit tenetur minima rem sequi cum. Necessitatibus, blanditiis repellat?</p>
+    <p>Banking services encompass a wide range of offerings designed to help individuals and businesses manage their finances. These include deposit services like checking, savings, and money market accounts; loan and credit services such as personal, auto, mortgage, and business loans; investment services like retirement accounts and wealth management; and online banking tools for managing accounts, making payments, and transferring money. Banks also provide foreign exchange, security services like safe deposit boxes and fraud protection, and business-specific services such as merchant accounts and cash management. Overall, banks play a crucial role in providing financial solutions for daily transactions, saving, borrowing, investing, and securing assets.</p>
     <input type="submit" value="Read More">
    </div>
     <div class="items">
-        <img src="New assets/image/icon bank.jpg">
+        <img class="image" src="New assets/image/icon bank.jpg">
 
     </div></div>
 
    <div class="section">
     <div class="items">
         <h2>How Can we Help You Today?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam laudantium molestiae optio perspiciatis aut odio! Voluptatum tempora expedita aliquam quam, necessitatibus corrupti, debitis rem, reprehenderit aut iste repudiandae. Omnis, excepturi!</p>
+        <p>I can help others with banking services by guiding them in choosing the right accounts, explaining loan options, and assisting with setting up online and mobile banking. I can also teach them about bank fees, offer advice on managing credit, and support them with money transfers. Additionally, I can help secure their bank accounts and provide guidance on business banking. My goal is to make banking more accessible and easier for others to navigate.</p>
         <input type="submit" value="Get Started">
    </div>
    <div class="items">
-    <img src="New assets/image/OIP.jfif" alt="">
+    <img class="image" src="New assets/image/OIP.jfif" alt="">
     </div></div>
 
    <div class="section dark">
       <div class="items"> 
-        <img src="New assets/image/OIP.jfif"></div>
+        <img class="image" src="New assets/image/Bootgum_Support_550px_Watermarked.gif" alt=""></div>
       <div class="items">
         <h3>Log In</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime aperiam fugit exercitationem, fugiat accusantium cumque magnam eaque sit accusamus, et possimus in, atque iure repellat dolor? Iure cumque incidunt perferendis.</p>
+        <p>Overall, online banking services offer a convenient and secure way to handle your finances without needing to visit a physical branch. Whether it's transferring funds, managing accounts, or paying bills, these services make it easier to stay on top of your finances from anywhere.</p>
         <input type="submit" value="SIGN UP">
         <input type="submit" value="REGISTER">
     </div></div>
@@ -134,51 +286,69 @@
     <div class="section blue">
         <div class="items">
             <h4>Track Your Money</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium sit pariatur quo accusamus dolorem maiores illum minima culpa ex assumenda, id optio distinctio repellendus molestias aperiam perspiciatis, aut et libero!</p>
+            <p>You can use banking apps to check balances and categorize transactions, budgeting apps like Mint or YNAB for structured tracking, and spreadsheets for manual tracking. The envelope system helps control spending by setting limits for each category. Regularly reviewing credit card and debit card statements also helps identify spending patterns. For freelancers, apps like QuickBooks help track income, while tools like Truebill manage subscriptions. Tracking your net worth can provide a comprehensive view of your finances, and manual tracking with pen and paper is always an option for those who prefer it. Consistency in tracking is key to managing finances effectively.</p>
             <input type="submit" value="Read More">
         </div>
         <div class="items">
-            <img src="New assets/image/536113.png">
+            <img class="image" src="New assets/image/536113.png">
 
         </div> </div>
 
     <div class="section white">
         <div class="items">
-            <img src="New assets/image/OIP (1).jfif" alt="">
+            <img class="image"src="New assets/image/OIP (1).jfif" alt="">
         </div>
         <div class="items">
            <h4>Want To Transfer Money?</h4>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi deleniti nulla sequi aliquam dolores ratione animi consectetur facere incidunt in? Iusto hic voluptatibus id! Veritatis repudiandae sunt porro dicta recusandae.</p>
+           <p> money transfers can be done through a variety of methods depending on your needs. From bank transfers to mobile apps to international services, each method has its advantages in terms of speed, cost, and convenience.</p>
            <input type="submit" value="Get Started">
-        </div></div>
+        </div> </div>
 
         <div class="section title">
             <h5>Banking Made Simple, Security Made Strong.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quam rerum aperiam voluptates, dolorum soluta aliquid reiciendis, in odit fugit sequi? Quo quaerat minus dignissimos tempore quidem voluptatum, atque nemo!</p>
-            <input type="submit" value="Check"> 
-        <div></div>
-        <div class="section fine">
-            <div class="items">
+            <p>By combining simplicity in banking services with strong security measures, this approach offers both convenience and peace of mind for customers, allowing them to manage their finances with ease while knowing their money and personal information are protected.</p>
+            <input type="submit" value="Explore"> 
+        </div> </div>
+
+    <div class="section last">
+        <div class="items">
                 <h6>Online Banking</h6>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis sequi illum, aut a tempore modi unde? Facilis ipsam ratione libero quibusdam dolore fuga quod sequi, saepe ipsa, voluptatem eveniet exercitationem.</p>
+                <p>Online banking allows you to manage your financial transactions via the internet or mobile app. Key features include account management (viewing balances, transfers, and bill payments), mobile banking, loan management, and investment tracking. It offers convenience, efficiency, and paperless options but comes with risks such as cybersecurity threats and fraud. To get started, you’ll need to sign up with your bank, secure your account with strong passwords and multi-factor authentication, and download your bank’s app if available.</p>
                 <input type="submit" value="Try Me">
+        </div>
+    <div class="items">
+        <img class="image"src="New assets/image/2574734.png" alt="">
+       
+        </div> </div>
+
+        <div class="section final">
+            <div class="items">
+                <img class="image"src="New assets/image/bank-money-finance-business-icon-set_453374-550.avif" alt="">
             </div>
             <div class="items">
-                <img src="New assets/image/2574734.png" alt="">
-
-            </div></div>
-            <div class="section last">
-                <div class="items">
-                    <img src="New assets/image/bank-money-finance-business-icon-set_453374-550.avif" alt="">
+                <h6>Get the Funds You Need with Mabuhay Bank Loans!</h6>
+                <p>Looking to achieve your dreams? Whether it's buying a home, financing your car, or tackling a big project, Mabuhay Bank is here to help you get the loan you need—at competitive rates and flexible terms!</p>
+                <input type="submit" value="Details">
             </div>
-            <div class="items">
-                <h6>Loan</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, commodi! Magni autem ipsam iure excepturi blanditiis laudantium quae ullam id, quasi possimus voluptatibus culpa voluptas maxime doloribus necessitatibus nulla adipisci.</p>
-                 <input type="submit" value="Details">
-            </div></div>
+         </div>
 
-   <div class="footer">
-    COPYRIGHT@Bank2025
-   </div>
+        <div class="yellow">
+            <div class="items"> 
+                <img class="image"src="New assets/image/2574734.png" width="300px" height="300px">
+                </div>
+           <div class="items">
+            <h6>Secure Your Account</h6>
+            <p>To secure your bank account, start by using strong, unique passwords for each account and enabling two-factor authentication (2FA) to add an extra layer of security. Always use a secure internet connection, avoiding public Wi-Fi, and ensure your devices have updated software with anti-malware protection. Regularly monitor your account for suspicious activity and set up alerts for transactions. Be cautious of phishing scams and never share your bank details via email or phone. Use a strong PIN for your cards, and consider changing it regularly. If your card is lost or stolen, report it immediately to your bank. A password manager can help you securely store and generate strong passwords, and when using ATMs, always check for skimmers and cover the keypad while entering your PIN. By following these steps, you can significantly reduce the risk of unauthorized access and keep your bank account safe.</p>
+            <input type="submit" value="Explore More">
+           </div>
+        </div>
+
+    <div class="footer">
+        <h1>COPYRIGHT@BANK2025</h1>
+
+    </div>
+
+
+        
 </body>
 </html>
