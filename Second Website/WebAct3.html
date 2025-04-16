@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (width <=375px) {
+            body {
+                background-color:rgb(241, 208, 214)
+            }
+            
+        }
+        @media screen and (width >=375px) {
+            body {
+                background-color: bisque;
+            }
+            
+        }
+        @media screen and (width >=744px) {
+            body {
+                background-color: rgb(192, 243, 226);
+            }
+        }
+        @media screen and (width >=1024px) {
+            body {
+                background-color: rgb(247, 243, 243);
+            }
+        }
+        .header {
+            background-color: grey;
+            display: flex;
+            flex-flow: column wrap;
+            height: 87px;
+            padding: 15px 25px;
+            gap: 10px;
+            margin: 20px;
+        } 
+        .logo {
+            justify-content: flex-start;
+        }
+        nav {
+            background-color: aliceblue;
+            display: flex;
+            height: 45px;
+            padding: 10px;
+            justify-content: flex-end;
+            justify-content: space-evenly;
+        }
+        nav a:hover {
+            background-color: rgb(146, 145, 145);
+            border-radius: 5px;
+            padding: 10px;
+        }
+      #heading {
+            background-color: gray;
+            margin: 20px;
+            padding: 70px;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+            height: 335px;
+      }
+      #heading> .items  h1{
+            background-color: rgb(190, 189, 189);
+            color: black;
+           
+      }
+      #heading > input [type="submit"] {
+            display: flex;
+            justify-items: center;
+      }
+      .two {
+            display: flex;
+            background-color: gray;
+            height: 481px;
+            margin: 20px;
+            padding: 100px;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            gap: 100px;
+            padding-bottom: 110px;
+      }
+    .two> .items {
+            justify-items: center;
+            background-color: rgb(190, 189, 189);
+            height: 261px;
+            width: 479px;
+            padding-top: 30px;
+            padding: 50px;
+      }
+      .three {
+            display: flex;
+            background-color: gray;
+            height: 481px;
+            margin: 20px;
+            padding: 100px;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            gap: 100px;
+            padding-bottom: 110px;
+            
+      }
+      .three> .items {
+            justify-items: center;
+            background-color: rgb(190, 189, 189);
+            height: 261px;
+            width: 479px;
+            padding-top: 30px;
+            padding: 50px;
+            
+      }
+      .four {
+            display: flex;
+            background-color: gray;
+            height: 481px;
+            margin: 20px;
+            padding: 100px;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            gap: 100px;
+            padding-bottom: 80px;
+      }
+      .four> .items {
+            justify-items: center;
+            background-color: rgb(190, 189, 189);
+            height: 261px;
+            width: 479px;
+            padding-top: 30px;
+            padding: 50px;
+            align-content: center;
+      }     
+      .four> .items h1 {
+           justify-items: center;
+           align-content: center;
+           text-align: justify;
+      }
+      #testimonials {
+           height: 562px;
+           background-color: gray;
+           padding: 60px 20px;
+           text-align: center;
+           margin: 20px;
+      }
+
+     .items h1 {
+          justify-content: center;
+          background-color: rgb(190, 189, 189) ;
+          font-size: 2.5rem;
+          margin-bottom: 40px;
+          margin: 20px;
+          margin-left: 400px;
+          margin-right: 400px;
+          gap: 35px;
+          text-align: justify;
+          text-align: center;
+      }
+
+     .testi {
+          
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: center;
+      }
+
+     .card {
+         
+          height: 267px;
+          background-color:  rgb(190, 189, 189);
+          width: 300px;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          text-align:center;
+      }
+
+     .card img {
+          width: 60px;
+          height: 60px;
+          border-radius: 12px;
+          margin-bottom: 15px;
+      }
+
+     .card p {
+          font-size: 14px;
+          margin-bottom: 15px;
+          color: #333;
+      }
+
+     .card h3 {
+          font-size: 14px;
+          font-weight: 600;
+          color: #555;
+      }
+      #subheading {
+            background-color: gray;
+            margin: 20px;
+            padding: 100px;
+            justify-content: center;
+            text-align: center;
+            font-size: 40px;
+            height: 335px;
+      }
+      #subheading> .items  h1{
+            background-color: rgb(190, 189, 189);
+            color: black;
+           
+      }
+      #subheading > input [type="submit"] {
+            display: flex;
+            justify-items: center;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img class="logo" src="placeholder.co/" width="60px" height="60px">
+            </div> 
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="">Contacts</a>
+            </nav>
+        </div>
+    </header>
+    <div id="heading">
+        <div class="items">
+            <h1>HEADING ONE</h1>
+        </div>
+        <div class="items">
+            <input type="submit" value="CTA">
+        </div>
+    </div>
+    <div class="h two">
+        <div class="items">
+            <h1>VISTA COSTA COLLECTION</h1>
+            <p>New collection of clothes for you Girl! With new brands and best quality of fabrics and new trends and different style for your everyday mood.</p>
+        </div>
+        <div class="items">
+            <img src="placeholder.co/" height="174px" width="287px">
+
+        </div>
+    </div>
+
+    <div class="h three">
+        <div class="items">
+            <img src="placeholder.co/" height="174px" width="287px">
+
+        </div>
+        <div class="items">
+           <h1>NEW ARRIVAL</h1>
+           <p>New collection for you Girl! With 50% SALE! For our new arrival items  let your own desire come true with our collection  </p>
+        </div>
+    </div>
+
+    <div class="h four">
+        <div class="items">
+            <h1>2025 SALE!</h1>
+            <p>Wardrobe Upgrade, On Sale! </p>
+
+        </div>
+        <div class="items">
+            <img src="placeholder.co/" height="174px" width="287px">
+
+        </div>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <div class="items">
+          <h1>TESTIMONIALS</h1>
+        </div>
+        <div class="testi">
+          <div class="card">
+            <img src="https://via.placeholder.com/60" width="40px" height="40px">
+            <div class="content">
+              <p>"I love how easy it is to find stylish outfits on this site! The quality is amazing, and the sizing is always spot on. My go-to place for fashion!"</p>
+              <h3>SOPHIA REYES, 21</h3>
+            </div>
+          </div>
+      
+          <div class="card">
+            <img src="https://via.placeholder.com/60" width="40px" height="40px">
+            <div class="content">
+              <p>"Shopping here is always a great experience. Fast delivery, great customer service, and the clothes always fit perfectly. Highly recommend!"</p>
+              <h3>JEAN MARIE LOPEZ, 35</h3>
+            </div>
+          </div>
+      
+          <div class="card">
+            <img src="https://via.placeholder.com/60"  width="40px" height="40px">
+            <div class="content">
+              <p>"Every piece I’ve bought has exceeded my expectations. The styles are fresh, and the site is so easy to navigate. I’ll definitely be back for more!"</p>
+              <h3>LORRAINE CLANDLASTINE, 28</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="subheading">
+        <div class="items">
+            <h1><b>✨ Trendy & Modern</b></h1>
+            <p>"Where Fashion Meets Confidence."</p>
+        </div>
+        <div class="items">
+            <input type="submit" value="CTA">
+        </div>
+      </div>
+</body>
+</html>
