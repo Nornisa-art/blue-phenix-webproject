@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(150, 168, 241);
+        }
+        #fname-error {
+            font-style: italic;
+            color: rgb(15, 15, 15);
+        }
+        #email-error {
+            font-style: italic;
+            color: rgb(3, 3, 3);
+        }
+        #password-error{
+            font-style: italic;
+            color: rgb(7, 7, 7);
+        }
+        #uname-error{
+            font-style: italic;
+        }
+        #date-error{
+            font-style: italic;
+        }
+        #cname-error{
+            font-style: italic;
+        }
+        #gender-error{
+            font-style: italic;
+        }
+        #lname {
+            font-style: italic;
+        }
+
+        form {
+            background-color: rgb(212, 255, 255);
+            height: 950px;
+            width: 800px;
+            border:1px solid black;
+            border-radius: 5px;
+            margin-left: 100px;
+        }
+        label, input {
+            padding-top: 10px;
+            padding-right: 10px ;
+            padding-left:10px;
+            margin-left: 10px;
+            display: block;
+            font-size: 18px;
+            color: blue;
+            border-radius: 5px;
+            height: 25px;
+        }
+        input[type="radio"] {
+            display: inline;
+            margin: 5px;
+    }
+       
+    input[type="submit"] {
+            display: flex;
+            background-color: rgb(48, 141, 248);
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            font-style:normal;
+            padding-bottom: 10px;
+            padding-left:20px ;
+            padding-right:20px ;
+            margin: 10px;
+            margin-left: 80px;
+            gap: 50px;
+            height: 50px;
+        }
+        input[type="email"], input[type="password"], input[type="text"],
+        input[type="date"]{
+              height: 20px;
+              width: 650px;
+              font-size: 16px;
+              padding: 5px;
+              border-radius: 10px;
+              font-style: oblique;
+              color:rgb(12, 12, 11);
+              margin: 10px;
+            }
+        
+       
+       
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="return validate()">
+        <label for="fname">Firstname</label>
+        <input type="text" id="fname" minlength="5" maxlength="10" >
+        <span id="fname-error"></span>
+
+        <label for="lname">Lastname</label>
+        <input type="text" id="lname" minlength="5" maxlength="10" >
+        <span id="lname-error"></span>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="radio"> Male
+        <input type="radio" name="gender" id="radio"> Female
+        <span id="gender-error"></span>
+
+        <label for="date"><b>Birth date</b></label> 
+        <input type="date" id="date"> 
+        <span id="date-error"></span>
+        
+        <label for="cname">Contact</label>
+        <input type="text" id="cname" pattern="[0-9]{11,}" >
+        <span id="cname-error"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" >
+        <span id="email-error"></span>
+
+        <label for="uname">Username</label>
+        <input type="text" id="uname" minlength="5" maxlength="10" >
+        <span id="uname-error"></span>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" pattern="[a-z0-9]{8,}" >
+        <span id="password-error"></span>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <SCript>
+        function validate(){
+            let isValid = true;
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let gender = document.getElementById("radio").value;
+            let date = document.getElementById("date").value;
+            let contact = document.getElementById("cname").value;
+            let email = document.getElementById("email").value;
+            let uname = document.getElementById("uname").value
+            let password = document.getElementById("password").value;
+
+            if(fname == ""){
+                document.getElementById("fname-error").innerHTML = "Firstname is required";
+            }
+            else if(name.length <5){
+                document.getElementById("fname-error").innerHTML = "Name must be at least 5 characters long";
+                isValid = false;
+            }
+            else{
+                document.getElementById("fname-error").innerHTML= "";
+                isValid = false;
+            }
+            if(lname == ""){
+                document.getElementById("lname-error").innerHTML = "Lastname is required";
+                isValid= false;
+            }
+            else if(name.length <5){
+                document.getElementById("lname-error").innerHTML = "Name must be at least 5 characters long";
+                isValid = false;
+            }
+            else{
+                document.getElementById("lname-error").innerHTML= "";
+                isValid = false;
+            }
+            if(email ==""){
+                document.getElementById("email-error").innerHTML = "Email is required";
+                isValid= false;
+            }
+
+            if(gender ==""){
+                document.getElementById("gender-error").innerHTML = "Gender is required";
+                isValid= false;
+            }
+
+            if(date ==""){
+                document.getElementById("date-error").innerHTML = "Birthdate is required";
+                isValid= false;
+            }
+
+            if(contact ==""){
+                document.getElementById("cname-error").innerHTML = "Contact is required";
+                isValid= false;
+            }
+
+            if(uname ==""){
+                document.getElementById("uname-error").innerHTML = "Username is required";
+                isValid= false;
+            }
+            if(password ==""){
+                document.getElementById("password-error").innerHTML = "Password is required";
+                isValid= false;
+            }
+            return isValid;
+        }
+    </SCript>
+</body>
+</html>

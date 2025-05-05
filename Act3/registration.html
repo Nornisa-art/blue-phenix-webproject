@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color:#09122C;
+        }
+        form{
+            background-color: #FAF1E6;
+            border-radius: 20px;
+            height: 750px;
+            width: 700px;
+            padding-top: 10px;
+            padding-right: 30px ;
+            padding-left:30px;
+            margin: 50px;
+            margin-left: 500px;
+         
+        }
+        label, input {
+          padding-top: 10px;
+          padding-right: 10px ;
+          padding-left:10px;
+          justify-items: flex-start;
+          display:flex;
+          padding-right:20px;
+         
+        }
+       
+        input[type="email"], input[type="password"], input[type="text"],
+        input[type="date"]{
+              height: 20px;
+              width: 650px;
+              font-size: 16px;
+              padding: 5px;
+              border-radius: 10px;
+              font-style: oblique;
+              color:rgb(12, 12, 11);
+              margin: 10px;
+            }
+
+        input[type="radio"] {
+            display: inline;
+            margin: 5px;
+    }
+        
+        input[type="submit"] {
+            display: flex;
+            background-color: rgb(48, 141, 248);
+            font-size: 20px;
+            border-radius: 10px;
+            color: white;
+            font-style:normal;
+            padding-bottom: 10px;
+            padding-left:20px ;
+            padding-right:20px ;
+            margin: 10px;
+            margin-left: 300px;
+            gap: 50px;
+        }
+        header> h1 {
+            color: #FAF1E6;
+            display: flex;
+            justify-items: center;
+            padding-left: 100px;
+            padding-top: 15px;
+            margin: 5px;
+            margin-left: 600px;
+            margin-top: 50px;
+        }
+  </style>
+
+</head>
+<body>
+    <header>
+        <h1>REGISTRATION FORM</h1>
+    </header>
+    <form action="" onsubmit="return validate()">
+        <label for="firstname"><b>Firstname<b></label> 
+        <input type="text" id="firstname" minlength="5" maxlength="10">
+        <span id="firstname-error"></span> 
+
+        <label for="lastname">Lastname</label> 
+        <input type="text" id="lastname" minlength="5" maxlength="10">
+        <span id="lastname-error"></span>
+
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="radio"> Male
+        <input type="radio" name="gender" id="radio"> Female
+        <span id="gender-error"></span>
+
+        <label for="date"><b>Birth date</b></label> 
+        <input type="date" id="date"> 
+        <span id="date-error"></span>
+
+        <label for="contactno">Contact</label>
+        <input type="text" id="contactno" pattern="[0-12]{8,}">
+        <span id="contact-error"></span>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" >
+        <span id="email-error"></span>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" minlength="10" maxlength="10">
+        <span id="username-error"></span>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" pattern="[a-z0-9]{8,}">
+        <span id="password-error"></span>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+
+    <SCript>
+        function validate(){
+            let isValid = true;
+            let Firstname = document.getElementById("firstname").value;
+            let Lastname = document.getElementById("lastname").value;
+            let Gender = document.getElementById("gender").value;
+            let Birthdate = document.getElementById("date").value;
+            let Contact = document.getElementById("contactno").value;
+            let Email = document.getElementById("email").value;
+            let Username = document.getElementById("username").value;
+            let Password = document.getElementById("password").value;
+        
+        if(firstname == ""){
+            document.getElementById("firstname-error").innerHTML = "Firstname is required";
+            isValid = false;
+
+        }
+        else if(name.length <5){
+            document.getElementById("firstname-error").innerHTML = "Name must be at least 5 characters long";
+            isValid = false;
+        }
+        else{
+            document.getElementById("firstname-error").innerHTML = "";
+        }
+        
+        if(lastname == ""){
+            document.getElementById("lastname-error").innerHTML = "Lastname is required";
+            isValid = false;
+
+        }
+        else if(name.length <5){
+            document.getElementById("lastname-error").innerHTML = "Name must be at least 5 characters long";
+            isValid = false;
+        }
+        else{
+            document.getElementById("lastname-error").innerHTML = "";
+        }
+
+        if(gender == ""){
+            document.getElementById("gender-error").innerHTML = "Gender is required";
+            isValid = false;
+
+        }
+
+        if(birthdate == ""){
+            document.getElementById("date-error").innerHTML = "Birthdate is required";
+            isValid = false;
+
+        }
+
+        if(contact == ""){
+            document.getElementById("contact-error").innerHTML = "Contact is required";
+            isValid = false;
+
+        }
+        if(email == ""){
+            document.getElementById("email-error").innerHTML = "Email is required";
+            isValid = false;
+
+        }
+        if(username == ""){
+            document.getElementById("username-error").innerHTML = "Username is required";
+            isValid = false;
+
+        }
+        if(password== ""){
+            document.getElementById("password-error").innerHTML = "Password is required";
+            isValid = false;
+
+        }
+
+        return isValid;
+     }
+
+   
+</SCript>
+
+
+        
+   
+</body>
+</html>

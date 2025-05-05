@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="modifyElements()">Click me!</button>
+    <h1 id="titleName">Title</h1>
+    <ul id="groceryList">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+    </ul>
+   
+    <script>
+        function modifyElements(){
+          let groceryList = document.getElementById("groceryList"); 
+          let newLi = document.createElement ("li");
+          newLi.innerHTML = "Mango";
+          groceryList.appendChild(newLi);
+        }
+
+
+        function manipulateHtml(){
+           let title = document.getElementById("titleName");
+           title.innerHTML = "Web Development NCII";
+
+           title.style.display = "block";
+           title.style.color = "red";
+           title.style.fontSize = "50px";
+
+        }
+
+
+        function handClick(){
+            let name ="Nornisa C. Gogo";
+            let age = 26;
+            let isStudent = false;
+
+            console.log ("Name", name);
+            console.log ("Age", age);
+            console.log ("Is Student", isStudent);
+
+            alert("Welcome to my website!");
+            let answer =prompt("Enter your name");
+
+            confirm("Are you sure youwant to proceed? " + answer);
+        }
+
+      
+    </script>
+</body>
+</html>
